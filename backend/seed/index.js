@@ -13,6 +13,7 @@ async function seedDB() {
     const userFilePath = './seed/users.json';
     const chapterFilePath = './seed/chapters.json';
     const uri = process.env.MONGO_URI;
+    console.log(uri)
     const client = new MongoClient(uri, {
         useNewUrlParser: true,
         // useUnifiedTopology: true,
